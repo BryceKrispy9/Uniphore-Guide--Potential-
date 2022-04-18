@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import axios from "axios";
 
 import NavigationComponent from "../navigation/navigation-container";
-import ViewPosts from "./pages/posts";
+// import ViewPosts from "./pages/posts"; {Shows all posts}
+import UProductSuite from "../../src/components/pages/u-product-suite";
+import QForSales from "../../src/components/pages/q-for-sales";
+import InteractProductSuite from "../../src/components/pages/interact-product-suite";
 import PostDetail from "./pages/post-detail";
-import Contact from "./pages/contact";
 import NoMatch from "./pages/no-match";
 import Home from "./pages/home";
 import AllPosts from "./pages/all-posts";
@@ -116,8 +118,6 @@ export default class App extends Component {
 
 							<Route path="/p/:slug" component={PostDetail} />
 
-							<Route path="/contact" component={Contact} />
-
 							{this.state.loggedInStatus === "LOGGED_IN"
 								? this.authorizedPages()
 								: null}
@@ -128,6 +128,18 @@ export default class App extends Component {
 							/>
 
 							<Route path="/fourms" component={AllPosts} />
+
+							<Route
+								path="/u-product-suite"
+								component={UProductSuite}
+							/>
+
+							<Route path="/q-for-sales" component={QForSales} />
+
+							<Route
+								path="/interact-product-suite"
+								component={InteractProductSuite}
+							/>
 
 							<Route component={NoMatch} />
 						</Switch>
