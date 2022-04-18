@@ -2,8 +2,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
-	margin-top: 18px;
+	color: black;
+	margin-top: 50px;
+	margin-bottom: 540px;
 	font-size: 1.5em;
 	font-style: italic;
 	display: grid;
@@ -15,14 +16,14 @@
 	a {
 		font-size: 2em;
 		cursor: pointer;
-		color: white;
+		color: black;
 		font-weight: 700;
-		margin-right: 30px;
+		margin-left: 70px;
 		margin-bottom: 30px;
 		transition: 0.5s ease-in-out;
 
 		&:hover {
-			color: $light-blue;
+			color: #ff6a13;
 		}
 	}
 }

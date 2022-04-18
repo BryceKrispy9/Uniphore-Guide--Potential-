@@ -10,6 +10,7 @@ import NoMatch from "./pages/no-match";
 import Home from "./pages/home";
 import AllPosts from "./pages/all-posts";
 import Icons from "../components/helpers/icons";
+import Footer from "./homepage/footer";
 
 export default class App extends Component {
 	constructor(props) {
@@ -83,8 +84,8 @@ export default class App extends Component {
 					<div className="navigation-wrapper">
 						<div className="logo-img-wrapper">
 							<img
-								src={require("../../static/assets/Logo.png")}
-								alt="SwimCoachLogo"
+								src={require("../../static/assets/uniphore-support-logo.png")}
+								alt="UniphoreLogo"
 							/>
 						</div>
 						<NavigationComponent
@@ -132,6 +133,10 @@ export default class App extends Component {
 						</Switch>
 					</div>
 				</Router>
+
+				<div>
+					<Footer />
+				</div>
 			</div>
 		);
 	}

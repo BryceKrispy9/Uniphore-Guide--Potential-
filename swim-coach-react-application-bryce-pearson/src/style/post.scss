@@ -13,31 +13,29 @@
 	.content-container {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 175px;
 
 		h1 {
 			margin-left: 15px;
-			color: $light-blue;
+			color: $black;
 			cursor: pointer;
 			transition: 0.5s ease-in-out;
 
 			&:hover {
-				color: yellow;
+				color: #ff6a13;
 			}
 		}
 	}
 
 	.content {
-		border: 3px;
-		border-style: solid;
-		border-color: $light-blue;
 		padding: 2em;
 
 		font-size: 1.5em;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		width: 500px;
+		width: 100%;
 		height: 400px;
-		color: $offwhite;
+		color: $black;
 	}
 }

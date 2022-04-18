@@ -103,7 +103,7 @@ class Posts extends Component {
 
 				<div className="new-post-link">
 					<a onClick={this.handleNewPostClick}>
-						New Post <FontAwesomeIcon icon="plus-square" />
+						New Guide <FontAwesomeIcon icon="plus-square" />
 					</a>
 				</div>
 

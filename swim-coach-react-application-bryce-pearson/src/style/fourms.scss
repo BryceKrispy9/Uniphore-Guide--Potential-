@@ -12,14 +12,14 @@
 		a {
 			font-size: 2em;
 			cursor: pointer;
-			color: white;
+			color: black;
 			font-weight: 700;
 			margin-right: 30px;
 			margin-bottom: 30px;
 			transition: 0.5s ease-in-out;
 
 			&:hover {
-				color: $light-blue;
+				color: #ff6a13;
 			}
 		}
 	}
@@ -30,7 +30,8 @@
 		width: 800px;
 		font-weight: 700;
 		margin-left: 22px;
-		color: $offwhite;
+		margin-bottom: 50px;
+		color: $black;
 
 		div {
 			display: grid;
@@ -39,7 +40,7 @@
 		a {
 			font-size: 1.5em;
 			text-decoration: none;
-			color: $light-blue;
+			color: $black;
 			transition: 0.5s ease-in-out;
 
 			&:hover {

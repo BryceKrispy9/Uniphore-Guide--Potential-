@@ -96,7 +96,7 @@ export default class PostForm extends Component {
 						type="text"
 						onChange={this.handleChange}
 						name="fourm_title"
-						placeholder="Swim Set Title"
+						placeholder="Guide Title"
 						value={this.state.fourm_title}
 					/>
 				</div>
@@ -106,7 +106,7 @@ export default class PostForm extends Component {
 						type="text"
 						onChange={this.handleChange}
 						name="intensity_content"
-						placeholder="Intensity Content (Easy, Medium, Hard, Expert)"
+						placeholder="Product Name (U-Assist, U-Trust, Q for Sales, etc.)"
 						value={this.state.intensity_content}
 					/>
 				</div>
@@ -116,12 +116,12 @@ export default class PostForm extends Component {
 						type="text"
 						onChange={this.handleChange}
 						name="focus_content"
-						placeholder="Focus (Stroke, Sprinting, DPS, etc.)"
+						placeholder="Type of guide (Troubleshooting, Implementation, etc.)"
 						value={this.state.focus_content}
 					/>
 				</div>
 
-				<div className="one-column">
+				{/* <div className="one-column">
 					<input
 						type="text"
 						onChange={this.handleChange}
@@ -129,7 +129,7 @@ export default class PostForm extends Component {
 						placeholder="Equipment Needed (N/A for none)"
 						value={this.state.equipment_content}
 					/>
-				</div>
+				</div> */}
 
 				<div className="one-column">
 					<RichTextEditor

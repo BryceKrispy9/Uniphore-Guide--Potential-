@@ -1,7 +1,7 @@
 .login-page-input {
 	display: grid;
-	border-style: solid;
-	border-color: #287ec7;
+	// border-style: solid;
+	// border-color: #287ec7;
 	padding-top: 0.5em;
 	padding-bottom: 3.6em;
 
@@ -19,6 +19,13 @@
 		margin: 50px;
 	}
 
+	h2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 30px;
+	}
+
 	button {
 		height: 42px;
 		font-weight: 700;
@@ -27,7 +34,7 @@
 		transition: 0.5s ease-in-out;
 
 		&:hover {
-			background-color: darkgreen;
+			background-color: #ff6a13;
 		}
 	}
 }
@@ -37,6 +44,6 @@
 	// }
 
 	.right-side {
-		color: green;
+		// color: $green;
 	}
 }

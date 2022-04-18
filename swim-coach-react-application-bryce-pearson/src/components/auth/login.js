@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Redirect,
+} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import AllPosts from "../pages/all-posts";
@@ -55,8 +60,8 @@ export default class Login extends Component {
 	render() {
 		return (
 			<div className="login-page-input">
-				<h1>Welcome to Swim Set Central!</h1>
-				<h1>Login to add new posts</h1>
+				<h1>Welcome to Uniphore Support!</h1>
+				<h2>Login to add new guides</h2>
 
 				<div>{this.state.errorText}</div>
 
@@ -90,7 +95,12 @@ export default class Login extends Component {
 						</div>
 					</div>
 
-					<button className="login-button" type="submit" path="/fourms" onClick={AllPosts}>
+					<button
+						className="login-button"
+						type="submit"
+						path="/fourms"
+						onClick={AllPosts}
+					>
 						Login
 					</button>
 				</form>

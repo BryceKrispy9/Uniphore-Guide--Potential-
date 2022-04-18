@@ -1,11 +1,10 @@
-<h1>Swim Coach Central</h1>
-Purpose: Allows swim coaches to share their favorite sets with other swim coaches
+<h1>Uniphore Software Support Guide Site</h1>
 
 <h1>
 Python Flask API instructions
 </h1>
 
-API can be reached at `https://swim-coach-app-flask-api.herokuapp.com`
+API can be reached at `{Link}`
 
 Further API calls can be found in the `app.py` file located in the Flask API folder.
 

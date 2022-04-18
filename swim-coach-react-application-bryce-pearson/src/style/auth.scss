@@ -1,10 +1,10 @@
 .auth-page-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	height: 45vh;
-	width: 70vw;
+	width: 100vw;
 	margin-top: 25px;
-	// margin-left: 434px;
+	margin-bottom: 320px;
 
 	.right-side {
 		display: flex;
@@ -18,7 +18,7 @@
 
 			svg {
 				font-size: 2em;
-				color: $light-blue;
+				color: $black;
 				margin-right: 15px;
 			}
 		}

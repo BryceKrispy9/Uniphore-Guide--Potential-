@@ -7,7 +7,7 @@ export default class HomepageContainer extends Component {
 		super();
 
 		this.state = {
-			pageTitle: "Please sign in to create new posts",
+			pageTitle: "Please sign in to create new guides",
 			isLoading: false,
 			data: [
 				{
@@ -30,7 +30,7 @@ export default class HomepageContainer extends Component {
 
 		return (
 			<div className="homepage-title">
-				<h1>Swim Coach Central</h1>
+				<h1>Uniphore Support Guides</h1>
 				<h2>{this.state.pageTitle}</h2>
 
 				{this.homepageItems()}

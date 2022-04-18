@@ -8,26 +8,11 @@ const NavigationComponent = (props) => {
 		return (
 			<div className="nav-link-wrapper">
 				<NavLink to="/fourms/admin" activeClassName="nav-link-active">
-					Add & Edit Sets
+					Add & Edit Guides
 				</NavLink>
 			</div>
 		);
 	};
-
-	// const handleSignOut = () => {
-	// 	axios
-	// 		.get("https://swim-coach-app-flask-api.herokuapp.com/login")
-	// 		.then((response) => {
-	// 			if (response.status === 200) {
-	// 				props.history.push("/");
-	// 				props.handleSuccessfulLogout();
-	// 			}
-	// 			return response.data;
-	// 		})
-	// 		.catch((error) => {
-	// 			console.log("Error signing out", error);
-	// 		});
-	// };
 
 	const refreshPage = () => {
 		window.location.reload(false);
@@ -42,25 +27,36 @@ const NavigationComponent = (props) => {
 					</NavLink>
 				</div>
 
-				<div className="nav-link-wrapper">
-					<NavLink to="/contact" activeClassName="nav-link-active">
-						Contact
-					</NavLink>
-				</div>
-
-				<div className="nav-link-wrapper">
+				{/* <div className="nav-link-wrapper">
 					<NavLink to="/fourms" activeClassName="nav-link-active">
-						View Sets
+						View Guides
 					</NavLink>
-				</div>
+				</div> */}
 
 				{props.loggedInStatus === "LOGGED_IN"
 					? dynamicLink("/fourms", "Posts")
 					: null}
 			</div>
 
+			<div className="nav-link-wrapper">
+				<NavLink to="/fourms" activeClassName="nav-link-active">
+					U-Product Suite
+				</NavLink>
+			</div>
+
+			<div className="nav-link-wrapper">
+				<NavLink to="/fourms" activeClassName="nav-link-active">
+					Q For Sales
+				</NavLink>
+			</div>
+
+			<div className="nav-link-wrapper">
+				<NavLink to="/fourms" activeClassName="nav-link-active">
+					Interact Product Suite
+				</NavLink>
+			</div>
+
 			<div className="right-side">
-				An App built by Bryce Pearson
 				{props.loggedInStatus === "LOGGED_IN" ? (
 					<a onClick={refreshPage}>
 						<FontAwesomeIcon icon="sign-out-alt" />
